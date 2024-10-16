@@ -6,7 +6,6 @@ class Home extends CI_Controller {
     public function __construct()
     {
       setlocale(LC_ALL, 'id_ID.utf8');
-      parent::__construct();
       date_default_timezone_set('Asia/Jakarta');
     }
 
