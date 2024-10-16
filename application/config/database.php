@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'bpssungaipenuh.com',
+	'hostname' => 'localhost',
 	'username' => 'u186259752_koto_teluk',
 	'password' => 'K0t0teluk',
 	'database' => 'u186259752_koto_teluk',
