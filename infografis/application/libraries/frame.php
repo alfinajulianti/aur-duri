@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Frame
 {
+	public $frame;
 
 	function __construct()
 	{
