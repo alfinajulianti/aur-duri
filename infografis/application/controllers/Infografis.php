@@ -7,7 +7,7 @@ class Infografis extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model(array('Model_admin'));
-        $this->load->library(array('frame'));
+        $this->load->library(array('Frame'));
 	}
 
 	public function index()
@@ -40,7 +40,7 @@ class Infografis extends CI_Controller {
 
         // $data['rt'] = $this->Model_admin->ambil_kolom('*','tabel_rt','id_rt IS NOT NULL');
 
-        // $this->frame->frame1('infografis/beranda',$data);
+        // $this->Frame->frame1('infografis/beranda',$data);
         $id_rt = $this->uri->segment(3);
         if ($id_rt == 0) {
             $data['pp1_1'] = $this->Model_admin->jumlah_data_where('id','tabel_penduduk','pendidikan = 1 AND kelompok_pendapatan = 1');
@@ -98,7 +98,7 @@ class Infografis extends CI_Controller {
 
         $data['rt'] = $this->Model_admin->ambil_kolom('*','tabel_rt','id_rt IS NOT NULL');
 
-        $this->frame->frame1('infografis/beranda',$data);
+        $this->Frame->frame1('infografis/beranda',$data);
     }
 
     public function view()
@@ -160,6 +160,6 @@ class Infografis extends CI_Controller {
 
         $data['rt'] = $this->Model_admin->ambil_kolom('*','tabel_rt','id_rt IS NOT NULL');
 
-        $this->frame->frame1('infografis/beranda',$data);
+        $this->Frame->frame1('infografis/beranda',$data);
     }
 }

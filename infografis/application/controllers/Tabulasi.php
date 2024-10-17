@@ -7,7 +7,7 @@ class Tabulasi extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model(array('Model_admin'));
-        $this->load->library(array('frame'));
+        $this->load->library(array('Frame'));
 	}
 
 	public function index()
@@ -17,7 +17,7 @@ class Tabulasi extends CI_Controller {
 
         $data['rt'] = $this->Model_admin->ambil_kolom('*','tabel_rt','id_rt IS NOT NULL');
 
-        $this->frame->frame1('tabulasi/beranda',$data);
+        $this->Frame->frame1('tabulasi/beranda',$data);
     }
 
 }
