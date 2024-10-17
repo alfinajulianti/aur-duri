@@ -4,7 +4,7 @@
         <h1>Tambah Data Penduduk</h1>
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="<?= base_url('home') ?>">Home</a></li>
+                <li class="breadcrumb-item"><a href="<?= base_url('home') ?>">Beranda</a></li>
                 <li class="breadcrumb-item">Data Penduduk</li>
                 <li class="breadcrumb-item active">Tambah Data</li>
             </ol>
@@ -143,11 +143,180 @@
                                             <option>8. Lainnya</option>
                                         </select>
                                     </div>
+                                    <div class="col-md-6">
+                                        <label for="sumberPenerangan" class="form-label">207.a. Sumber penerangan utama</label>
+                                        <select id="sumberPenerangan" class="form-select">
+                                            <option selected>Pilih sumber...</option>
+                                            <option>1. Listrik PLN dengan meteran</option>
+                                            <option>2. Listrik PLN tanpa meteran</option>
+                                            <option>3. Listrik Non-PLN</option>
+                                            <option>4. Bukan listrik</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="dayaListrik" class="form-label">207.b. <b>Jika 207a berkode 1</b>, Daya yang terpasang di rumah ini</label>
+                                        <select id="dayaListrik" class="form-select">
+                                            <option selected>Pilih daya...</option>
+                                            <option>1. 450 watt</option>
+                                            <option>2. 900 watt</option>
+                                            <option>3. 1.300 watt</option>
+                                            <option>4. 2.200 watt</option>
+                                            <option>5. > 2.200 watt</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="bahanBakar" class="form-label">208. Bahan bakar/energi utama untuk memasak</label>
+                                        <select id="bahanBakar" class="form-select">
+                                            <option selected>Pilih bahan bakar...</option>
+                                            <option>1. Listrik</option>
+                                            <option>2. Gas elpiji 5,5 kg/blue gaz</option>
+                                            <option>3. Gas elpiji 12 kg</option>
+                                            <option>4. Gas elpiji 3 kg</option>
+                                            <option>5. Gas kota/meteran PGN</option>
+                                            <option>6. Biogas</option>
+                                            <option>7. Minyak tanah</option>
+                                            <option>8. Briket</option>
+                                            <option>9. Arang</option>
+                                            <option>10. Kayu bakar</option>
+                                            <option>11. Lainnya</option>
+                                            <option>0. Tidak memasak di rumah</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="fasilitasBab" class="form-label">209.a. Kepemilikan dan penggunaan fasilitas tempat buang air besar</label>
+                                        <select id="fasilitasBab" class="form-select">
+                                            <option selected>Pilih kepemilikan...</option>
+                                            <option>1. Ada, digunakan hanya anggota keluarga sendiri</option>
+                                            <option>2. Ada, digunakan bersama anggota keluarga dari keluarga tertentu</option>
+                                            <option>3. Ada, di MCK komunal/umum</option>
+                                            <option>4. Tidak ada fasilitas</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="jenisKloset" class="form-label">209.b. <b>Jika 209a berkode 1, 2, atau 3 </b>, Jenis kloset</label>
+                                        <select id="jenisKloset" class="form-select">
+                                            <option selected>Pilih jenis...</option>
+                                            <option>1. Leher angsa</option>
+                                            <option>2. Plengsengan dengan tutup</option>
+                                            <option>3. Plengsengan tanpa tutup</option>
+                                            <option>4. Cemplung/cubluk</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="pembuanganAkhir" class="form-label">210. Tempat pembuangan akhir tinja</label>
+                                        <select id="pembuanganAkhir" class="form-select">
+                                            <option selected>Pilih tempat pembuangan...</option>
+                                            <option>1. Tangki septik</option>
+                                            <option>2. IPAL</option>
+                                            <option>3. Kolam/sawah/sungai/danau/laut</option>
+                                            <option>4. Lubang tanah</option>
+                                            <option>5. Pantai/tanah lapang/kebun</option>
+                                            <option>6. Lainnya</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="aksesInternet" class="form-label">211. Jenis akses internet utama yang digunakan keluarga selama sebulan terakhir</label>
+                                        <select id="aksesInternet" class="form-select">
+                                            <option selected>Pilih jenis...</option>
+                                            <option>0. Tidak menggunakan internet</option>
+                                            <option>1. Internet dan TV digital berlangganan</option>
+                                            <option>2. WiFi</option>
+                                            <option>3. Internet Handphone</option>
+                                        </select>
+                                    </div>
+                                    <h4 class="card-title">III. KETERANGAN SOSIAL EKONOMI KELUARGA</h4>
+                                    <div class="col-md-6">
+                                        <label for="noAnggota" class="form-label">301. Nomor urut anggota keluarga</label>
+                                        <input type="number" class="form-control" id="noAnggota">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="jk" class="form-label">303. Jenis kelamin</label>
+                                        <select id="jk" class="form-select">
+                                            <option selected>Pilih jenis kelamin...</option>
+                                            <option>1. Laki-laki</option>
+                                            <option>2. Perempuan</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="tglLahir" class="form-label">304. Tanggal lahir</label>
+                                        <input type="date" class="form-control" id="tglLahir">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="perkawinan" class="form-label">305. Status perkawinan</label>
+                                        <select id="perkawinan" class="form-select">
+                                            <option selected>Pilih status...</option>
+                                            <option>1. Belum Kawin</option>
+                                            <option>2. Kawin/Nikah</option>
+                                            <option>3. Cerai Hidup</option>
+                                            <option>4. Cerai Mati</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="sekolah" class="form-label">306.a. Partisipasi sekolah</label>
+                                        <select id="sekolah" class="form-select">
+                                            <option selected>Pilih partisipasi...</option>
+                                            <option>1. Tidak/belum pernah sekolah</option>
+                                            <option>2. Masih sekolah</option>
+                                            <option>3. Tidak bersekolah lagi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="pendidikanTertinggi" class="form-label">306.b. <b>Jika 306a berkode 2 atau 3 </b>, Jenjang pendidikan tertinggi yang pernah/sedang diduduki</label>
+                                        <select id="pendidikanTertinggi" class="form-select">
+                                            <option selected>Pilih pendidikan...</option>
+                                            <option>1. SD/ Sederajat</option>
+                                            <option>2. SMP/ Sederajat</option>
+                                            <option>3. SMA/ Sederajat</option>
+                                            <option>4. D1/D2/D3</option>
+                                            <option>5. D4/S1/Profesi</option>
+                                            <option>6. S2/S3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ijazahTertinggi" class="form-label">307. Ijazah/STTB tertinggi yang dimiliki</label>
+                                        <select id="ijazahTertinggi" class="form-select">
+                                            <option selected>Pilih ijazah/STTB...</option>
+                                            <option>1. SD/ Sederajat</option>
+                                            <option>2. SMP/ Sederajat</option>
+                                            <option>3. SMA/ Sederajat</option>
+                                            <option>4. D1/D2/D3</option>
+                                            <option>5. D4/S1/Profesi</option>
+                                            <option>6. S2/S3</option>
+                                            <option>7. Tidak punya Ijazah SD</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lapUsaha" class="form-label">308. Lapangan usaha dari pekerjaan utama</label>
+                                        <select id="lapUsaha" class="form-select">
+                                            <option selected>Pilih lapangan usaha...</option>
+                                            <option>1. Pertanian, Kehutanan, & Perikanan</option>
+                                            <option>2. Pertambangan & Penggalian</option>
+                                            <option>3. Industri Pengolahan</option>
+                                            <option>4. Pengadaan Listrik, Gas, Uap/Air Panas, & Udara Dingin</option>
+                                            <option>5. Pengelolaan Air, Pengelolaan Air Limbah, Pengelolaan dan Daur Ulang Sampah, & Aktifitas Remediasi</option>
+                                            <option>6. Konstruksi</option>
+                                            <option>7. Perdagangan Besar dan Eceran, Reprasi dan Perawatan Mobil dan Sepeda Motor</option>
+                                            <option>8. Pengangkutan dan Pergudangan</option>
+                                            <option>9. Penyediaan Akomodasi dan Makan Minum</option>
+                                            <option>10. Informasi dan komunikasi</option>
+                                            <option>11. Aktivitas Keuangan dan Asuransi</option>
+                                            <option>12. Real Estat</option>
+                                            <option>13. Aktivitas Profesional, Ilmiah, & Teknis</option>
+                                            <option>14. Aktivitas Penyewaan dan Sewa Guna Tanpa Hak Opsi, Ketenagakerjaan, Agen Perjalanan, & Penunjang Usaha Lainnya</option>
+                                            <option>15. Administrasi Pemerintahan, Pertahanan, & Jaminan Sosial Wajib</option>
+                                            <option>16. Pendidikan</option>
+                                            <option>17. Aktvitas Kesehatan Manusia dan Aktivitas Sosial</option>
+                                            <option>18. Kesenian, Hiburan, & Rekreasi</option>
+                                            <option>19. Aktivitas Jasa Lainnya</option>
+                                            <option>20. Aktivitas Rumah Tangga Sebagai Pemberi Kerja</option>
+                                            <option>21. Aktivitas Badan Internasional dan Badan Internasional Lainnya</option>
+                                        </select>
+                                    </div>
                                     <div class="col-12">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck">
                                             <label class="form-check-label" for="gridCheck">
-                                                Check me out
+                                                Data sudah benar
                                             </label>
                                         </div>
                                     </div>
@@ -157,10 +326,158 @@
                                 </form>
                             </div>
                             <div class="tab-pane fade" id="anggota-justified" role="tabpanel" aria-labelledby="anggota-tab">
-                                Nesciunt totam et. Consequuntur magnam aliquid eos nulla dolor iure eos quia. Accusantium distinctio omnis et atque fugiat. Itaque doloremque aliquid sint quasi quia distinctio similique. Voluptate nihil recusandae mollitia dolores. Ut laboriosam voluptatum dicta.
+                                <h4 class="card-title">I. KETERANGAN TEMPAT</h4>
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="namaRT" class="form-label">105. Nama RT</label>
+                                        <select id="namaRT" class="form-select">
+                                            <option selected>Pilih Nama RT...</option>
+                                            <option>1. RT 001 DUSUN LARIK DIUJUNG</option>
+                                            <option>2. RT 002 DUSUN LARIK DIUJUNG</option>
+                                            <option>3. RT 003 DUSUN LARIK DUJUNG</option>
+                                            <option>4. RT 003 DUSUN LARIK MELINTANG</option>
+                                            <option>5. RT 004 DUSUN LARIK MELINTANG</option>
+                                            <option>6. RT 005 DUSUN LARIK TENGAH</option>
+                                            <option>7. RT 006 DUSUN LARIK DI AIR</option>
+                                            <option>8. RT 007 DUSUN LARIK DI AIR</option>
+                                            <option>9. RT 007 DUSUN LARIK MELINTANG</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="noBangunan" class="form-label">No. Urut Bangunan Tempat Tinggal</label>
+                                        <input type="number" class="form-control" id="noBangunan">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="noKK" class="form-label">No. Urut Kepala Keluarga</label>
+                                        <input type="number" class="form-control" id="noKK">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="namaKK" class="form-label">106. Nama Kepala Keluarga</label>
+                                        <input type="text" class="form-control" id="namaKK">
+                                    </div>
+                                    <h4 class="card-title">III. KETERANGAN SOSIAL EKONOMI KELUARGA</h4>
+                                    <div class="col-md-6">
+                                        <label for="noAnggota" class="form-label">301. Nomor urut anggota keluarga</label>
+                                        <input type="number" class="form-control" id="noAnggota">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="namaAnggota" class="form-label">302. Nama anggota keluarga</label>
+                                        <input type="text" class="form-control" id="namaAnggota">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="jk" class="form-label">303. Jenis kelamin</label>
+                                        <select id="jk" class="form-select">
+                                            <option selected>Pilih jenis kelamin...</option>
+                                            <option>1. Laki-laki</option>
+                                            <option>2. Perempuan</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="tglLahir" class="form-label">304. Tanggal lahir</label>
+                                        <input type="date" class="form-control" id="tglLahir">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="perkawinan" class="form-label">305. Status perkawinan</label>
+                                        <select id="perkawinan" class="form-select">
+                                            <option selected>Pilih status...</option>
+                                            <option>1. Belum Kawin</option>
+                                            <option>2. Kawin/Nikah</option>
+                                            <option>3. Cerai Hidup</option>
+                                            <option>4. Cerai Mati</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="sekolah" class="form-label">306.a. Partisipasi sekolah</label>
+                                        <select id="sekolah" class="form-select">
+                                            <option selected>Pilih partisipasi...</option>
+                                            <option>1. Tidak/belum pernah sekolah</option>
+                                            <option>2. Masih sekolah</option>
+                                            <option>3. Tidak bersekolah lagi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="pendidikanTertinggi" class="form-label">306.b. <b>Jika 306a berkode 2 atau 3 </b>, Jenjang pendidikan tertinggi yang pernah/sedang diduduki</label>
+                                        <select id="pendidikanTertinggi" class="form-select">
+                                            <option selected>Pilih pendidikan...</option>
+                                            <option>1. SD/ Sederajat</option>
+                                            <option>2. SMP/ Sederajat</option>
+                                            <option>3. SMA/ Sederajat</option>
+                                            <option>4. D1/D2/D3</option>
+                                            <option>5. D4/S1/Profesi</option>
+                                            <option>6. S2/S3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ijazahTertinggi" class="form-label">307. Ijazah/STTB tertinggi yang dimiliki</label>
+                                        <select id="ijazahTertinggi" class="form-select">
+                                            <option selected>Pilih ijazah/STTB...</option>
+                                            <option>1. SD/ Sederajat</option>
+                                            <option>2. SMP/ Sederajat</option>
+                                            <option>3. SMA/ Sederajat</option>
+                                            <option>4. D1/D2/D3</option>
+                                            <option>5. D4/S1/Profesi</option>
+                                            <option>6. S2/S3</option>
+                                            <option>7. Tidak punya Ijazah SD</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lapUsaha" class="form-label">308. Lapangan usaha dari pekerjaan utama</label>
+                                        <select id="lapUsaha" class="form-select">
+                                            <option selected>Pilih lapangan usaha...</option>
+                                            <option>1. Pertanian, Kehutanan, & Perikanan</option>
+                                            <option>2. Pertambangan & Penggalian</option>
+                                            <option>3. Industri Pengolahan</option>
+                                            <option>4. Pengadaan Listrik, Gas, Uap/Air Panas, & Udara Dingin</option>
+                                            <option>5. Pengelolaan Air, Pengelolaan Air Limbah, Pengelolaan dan Daur Ulang Sampah, & Aktifitas Remediasi</option>
+                                            <option>6. Konstruksi</option>
+                                            <option>7. Perdagangan Besar dan Eceran, Reprasi dan Perawatan Mobil dan Sepeda Motor</option>
+                                            <option>8. Pengangkutan dan Pergudangan</option>
+                                            <option>9. Penyediaan Akomodasi dan Makan Minum</option>
+                                            <option>10. Informasi dan komunikasi</option>
+                                            <option>11. Aktivitas Keuangan dan Asuransi</option>
+                                            <option>12. Real Estat</option>
+                                            <option>13. Aktivitas Profesional, Ilmiah, & Teknis</option>
+                                            <option>14. Aktivitas Penyewaan dan Sewa Guna Tanpa Hak Opsi, Ketenagakerjaan, Agen Perjalanan, & Penunjang Usaha Lainnya</option>
+                                            <option>15. Administrasi Pemerintahan, Pertahanan, & Jaminan Sosial Wajib</option>
+                                            <option>16. Pendidikan</option>
+                                            <option>17. Aktvitas Kesehatan Manusia dan Aktivitas Sosial</option>
+                                            <option>18. Kesenian, Hiburan, & Rekreasi</option>
+                                            <option>19. Aktivitas Jasa Lainnya</option>
+                                            <option>20. Aktivitas Rumah Tangga Sebagai Pemberi Kerja</option>
+                                            <option>21. Aktivitas Badan Internasional dan Badan Internasional Lainnya</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Data sudah benar
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary">Tambah Data</button>
+                                    </div>
+                                </form>
                             </div>
                             <div class="tab-pane fade" id="excel-justified" role="tabpanel" aria-labelledby="excel-tab">
-                                Saepe animi et soluta ad odit soluta sunt. Nihil quos omnis animi debitis cumque. Accusantium quibusdam perspiciatis qui qui omnis magnam. Officiis accusamus impedit molestias nostrum veniam. Qui amet ipsum iure. Dignissimos fuga tempore dolor.
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5>Import Data Keluarga dari File Excel</h5>
+                                        </div>
+                                        <div class="card-block">
+
+                                            <?php echo form_open_multipart(""); ?>
+                                            <div class="form-group mb-2">
+                                                <input type="file" name="file_excel" id="file_excel" required>
+                                                <button type="submit" id="button_import" name="import" class="btn btn-primary mb-2 rounded"> <i class="bx bxs-file-import"></i> Import</button>
+                                                <button type="" id="button_template" name="template" class="btn btn-primary mb-2 rounded"> <i class="bx bxs-file"></i> Template</button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div><!-- End Default Tabs -->
 

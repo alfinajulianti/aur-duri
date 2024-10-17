@@ -4,7 +4,7 @@
     <h1>Hapus Data Penduduk</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="<?= base_url('home') ?>">Home</a></li>
+        <li class="breadcrumb-item"><a href="<?= base_url('home') ?>">Beranda</a></li>
         <li class="breadcrumb-item">Data Penduduk</li>
         <li class="breadcrumb-item active">Hapus Data</li>
       </ol>
@@ -19,35 +19,7 @@
           <div class="card-body">
             <div class="row">
               <div class="col">
-                <h5 class="card-title">Data By Name By Address</h5>
-              </div>
-              <div class="col-2 card-title">
-                <nav class="header-nav ms-auto">
-                  <ul class="d-flex align-items-center">
-                    <li class="nav-item dropdown pe-3">
-                      <button type="button" id="toggleButton" onclick="toggleSelect()" class="btn btn-primary" data-bs-toggle="dropdown"><i class="bi bi-person-plus"></i> Tambah Data</button>
-
-                      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-                        <li>
-                          <a class="dropdown-item d-flex align-items-center" href="">
-                            <i class="bx bx-list-plus"></i>
-                            Tambah Manual
-                          </a>
-                        </li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-
-                        <li>
-                          <a class="dropdown-item d-flex align-items-center" href="">
-                            <i class="bi bi-file-earmark-spreadsheet"></i>
-                            Import dari Excel
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
+                <h5 class="card-title">Hapus Data</h5>
               </div>
             </div>
 
@@ -56,7 +28,7 @@
               <table class="table datatable">
                 <thead>
                   <tr>
-                    <th>No</th>
+                    <th>Aksi</th>
                     <th>Nama RT</th>
                     <th>No. Urut Bangunan Tempat Tinggal</th>
                     <th>No. Urut Kepala Keluarga</th>
@@ -74,20 +46,184 @@
                 </thead>
                 <tbody>
                   <tr>
+                    <td class="align-middle text-center">
+                      <a href="" class="btn btn-danger tombol-hapus rounded" role="button"><i class="bx bxs-trash"></i>Hapus</a>
+                    </td>
+                    <td>RT 001 DUSUN LARIK DIUJUNG</td>
                     <td>1</td>
-                    <td>Unity Pugh</td>
-                    <td>9958</td>
-                    <td>Curicó</td>
-                    <td>2005/02/11</td>
-                    <td>37%</td>
-                    <td>Unity Pugh</td>
-                    <td>9958</td>
-                    <td>Curicó</td>
-                    <td>2005/02/11</td>
-                    <td>37%</td>
-                    <td>Curicó</td>
-                    <td>2005/02/11</td>
-                    <td>37%</td>
+                    <td>1</td>
+                    <td>ZON ANDESRA</td>
+                    <td>ZON ANDESRA</td>
+                    <td>Ya</td>
+                    <td>Laki-laki</td>
+                    <td>38</td>
+                    <td>Kawin/Nikah</td>
+                    <td>Tidak bersekolah lagi</td>
+                    <td>SMA/ Sederajat</td>
+                    <td>SMA/ Sederajat</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle text-center">
+                      <a href="" class="btn btn-danger tombol-hapus rounded" role="button"><i class="bx bxs-trash"></i>Hapus</a>
+                    </td>
+                    <td>RT 001 DUSUN LARIK DIUJUNG</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>ZON ANDESRA</td>
+                    <td>REKA AZLIARTI</td>
+                    <td>Tidak</td>
+                    <td>Perempuan</td>
+                    <td>39</td>
+                    <td>Kawin/Nikah</td>
+                    <td>Tidak bersekolah lagi</td>
+                    <td>SMA/ Sederajat</td>
+                    <td>SMP/ Sederajat</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle text-center">
+                      <a href="" class="btn btn-danger tombol-hapus rounded" role="button"><i class="bx bxs-trash"></i>Hapus</a>
+                    </td>
+                    <td>RT 001 DUSUN LARIK DIUJUNG</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>ZON ANDESRA</td>
+                    <td>REVANDES BIMA.M</td>
+                    <td>Tidak</td>
+                    <td>Laki-laki</td>
+                    <td>15</td>
+                    <td>Belum Kawin</td>
+                    <td>Masih sekolah</td>
+                    <td>SMA/ Sederajat</td>
+                    <td>SMA/ Sederajat</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle text-center">
+                      <a href="" class="btn btn-danger tombol-hapus rounded" role="button"><i class="bx bxs-trash"></i>Hapus</a>
+                    </td>
+                    <td>RT 001 DUSUN LARIK DIUJUNG</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>ZON ANDESRA</td>
+                    <td>GIBRAN AGUERO</td>
+                    <td>Tidak</td>
+                    <td>Laki-laki</td>
+                    <td>9</td>
+                    <td>Belum Kawin</td>
+                    <td>Masih sekolah</td>
+                    <td>SD/ Sederajat</td>
+                    <td>Tidak punya Ijazah SD</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle text-center">
+                      <a href="" class="btn btn-danger tombol-hapus rounded" role="button"><i class="bx bxs-trash"></i>Hapus</a>
+                    </td>
+                    <td>RT 001 DUSUN LARIK DIUJUNG</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>TARMIZI</td>
+                    <td>TARMIZI</td>
+                    <td>Ya</td>
+                    <td>Laki-laki</td>
+                    <td>65</td>
+                    <td>Kawin/Nikah</td>
+                    <td>Tidak bersekolah lagi</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle text-center">
+                      <a href="" class="btn btn-danger tombol-hapus rounded" role="button"><i class="bx bxs-trash"></i>Hapus</a>
+                    </td>
+                    <td>RT 001 DUSUN LARIK DIUJUNG</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>TARMIZI</td>
+                    <td>RISNA</td>
+                    <td>Tidak</td>
+                    <td>Perempuan</td>
+                    <td>63</td>
+                    <td>Kawin/Nikah</td>
+                    <td>Tidak bersekolah lagi</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle text-center">
+                      <a href="" class="btn btn-danger tombol-hapus rounded" role="button"><i class="bx bxs-trash"></i>Hapus</a>
+                    </td>
+                    <td>RT 001 DUSUN LARIK DIUJUNG</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>GURLIA</td>
+                    <td>GURLIA</td>
+                    <td>Ya</td>
+                    <td>Laki-laki</td>
+                    <td>60</td>
+                    <td>Kawin/Nikah</td>
+                    <td>Tidak bersekolah lagi</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle text-center">
+                      <a href="" class="btn btn-danger tombol-hapus rounded" role="button"><i class="bx bxs-trash"></i>Hapus</a>
+                    </td>
+                    <td>RT 001 DUSUN LARIK DIUJUNG</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>GURLIA</td>
+                    <td>MIRDA WATI</td>
+                    <td>Tidak</td>
+                    <td>Perempuan</td>
+                    <td>56</td>
+                    <td>Kawin/Nikah</td>
+                    <td>Tidak bersekolah lagi</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle text-center">
+                      <a href="" class="btn btn-danger tombol-hapus rounded" role="button"><i class="bx bxs-trash"></i>Hapus</a>
+                    </td>
+                    <td>RT 001 DUSUN LARIK DIUJUNG</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>ARDINAL</td>
+                    <td>ARDINAL</td>
+                    <td>Ya</td>
+                    <td>Laki-laki</td>
+                    <td>48</td>
+                    <td>Kawin/Nikah</td>
+                    <td>Tidak bersekolah lagi</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle text-center">
+                      <a href="" class="btn btn-danger tombol-hapus rounded" role="button"><i class="bx bxs-trash"></i>Hapus</a>
+                    </td>
+                    <td>RT 001 DUSUN LARIK DIUJUNG</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>ARDINAL</td>
+                    <td>LENY ZOSFITRA</td>
+                    <td>Tidak</td>
+                    <td>Perempuan</td>
+                    <td>48</td>
+                    <td>Kawin/Nikah</td>
+                    <td>Tidak bersekolah lagi</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>
