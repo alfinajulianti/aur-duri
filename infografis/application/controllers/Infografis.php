@@ -98,6 +98,7 @@ class Infografis extends CI_Controller {
 
         $data['rt'] = $this->Model_admin->ambil_kolom('*','tabel_rt','id_rt IS NOT NULL');
 
+        $this->load->view('admin/main',$data);
         $this->load->view('infografis/beranda',$data);
     }
 
@@ -160,6 +161,7 @@ class Infografis extends CI_Controller {
 
         $data['rt'] = $this->Model_admin->ambil_kolom('*','tabel_rt','id_rt IS NOT NULL');
 
+        $this->load->view('admin/main',$data);
         $this->load->view('infografis/beranda',$data);
     }
 }
