@@ -17,7 +17,9 @@ class Tabulasi extends CI_Controller {
 
         $data['rt'] = $this->Model_admin->ambil_kolom('*','tabel_rt','id_rt IS NOT NULL');
 
-        $this->Frame->frame1('tabulasi/beranda',$data);
+        $this->load->view('admin/header',$data);
+        $this->load->view('tabulasi/beranda',$data);
+        $this->load->view('admin/footer',$data);
     }
 
 }
