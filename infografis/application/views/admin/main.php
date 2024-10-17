@@ -209,7 +209,6 @@
 
   </aside><!-- End Sidebar-->
 
-  <?php echo $halaman;?>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
