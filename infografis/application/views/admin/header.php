@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Koto Teluk | Infografis Desa Cantik</title>
+  <title>Aur Duri | Infografis Desa Cantik</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -39,7 +39,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="" class="logo d-flex align-items-center">
         <img src="<?= base_url() ?>/assets/img/Lambang_Kota_Sungai_Penuh.png" alt="">
-        <span class="d-none d-lg-block">Koto Teluk</span>
+        <span class="d-none d-lg-block">Aur Duri</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -50,7 +50,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="<?php echo base_url('infografis'); ?>/assets/img/yoga.jpg" alt="Profile" class="rounded-circle">
+            <img src="" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">BPS Supe</span>
           </a><!-- End Profile Iamge Icon -->
 

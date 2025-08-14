@@ -26,9 +26,6 @@
                             <li class="nav-item flex-fill" role="presentation">
                                 <button class="nav-link w-100" id="anggota-tab" data-bs-toggle="tab" data-bs-target="#anggota-justified" type="button" role="tab" aria-controls="anggota" aria-selected="false">Anggota Keluarga</button>
                             </li>
-                            <li class="nav-item flex-fill" role="presentation">
-                                <button class="nav-link w-100" id="excel-tab" data-bs-toggle="tab" data-bs-target="#excel-justified" type="button" role="tab" aria-controls="excel" aria-selected="false">Import dari Excel</button>
-                            </li>
                         </ul>
                         <div class="tab-content pt-2" id="myTabjustifiedContent">
                             <div class="tab-pane fade show active" id="kk-justified" role="tabpanel" aria-labelledby="kk-tab">
@@ -38,28 +35,33 @@
                                         <label for="namaRT" class="form-label">105. Nama RT</label>
                                         <select id="namaRT" class="form-select">
                                             <option selected>Pilih Nama RT...</option>
-                                            <option>1. RT 001 DUSUN LARIK DIUJUNG</option>
-                                            <option>2. RT 002 DUSUN LARIK DIUJUNG</option>
-                                            <option>3. RT 003 DUSUN LARIK DUJUNG</option>
-                                            <option>4. RT 003 DUSUN LARIK MELINTANG</option>
-                                            <option>5. RT 004 DUSUN LARIK MELINTANG</option>
-                                            <option>6. RT 005 DUSUN LARIK TENGAH</option>
-                                            <option>7. RT 006 DUSUN LARIK DI AIR</option>
-                                            <option>8. RT 007 DUSUN LARIK DI AIR</option>
-                                            <option>9. RT 007 DUSUN LARIK MELINTANG</option>
+                                            <option>1. RT 001 DUSUN BATU LUMUT</option>
+                                            <option>2. RT 002 DUSUN BATU LUMUT</option>
+                                            <option>3. RT 003 DUSUN BARU JAYA</option>
+                                            <option>4. RT 004 DUSUN BARU JAYA</option>
+                                            <option>5. RT 005 DUSUN BARU SAKTI</option>
+                                            <option>6. RT 006 DUSUN BARU SAKTI</option>
+                                            <option>7. RT 007 DUSUN HARAPAN JAYA</option>
+                                            <option>8. RT 008 DUSUN HARAPAN JAYA</option>
+                                            <option>9. RT 009 DUSUN MALWAN</option>
+                                            <option>10. RT 010 DUSUN MALWAN</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="noBangunan" class="form-label">No. Urut Bangunan Tempat Tinggal</label>
+                                        <label for="noBangunan" class="form-label">106. No. Urut Bangunan</label>
                                         <input type="number" class="form-control" id="noBangunan">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="noKK" class="form-label">No. Urut Kepala Keluarga</label>
+                                        <label for="noKK" class="form-label">107. No. Urut Keluarga</label>
                                         <input type="number" class="form-control" id="noKK">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="namaKK" class="form-label">106. Nama Kepala Keluarga</label>
+                                        <label for="namaKK" class="form-label">108. Nama Kepala Keluarga</label>
                                         <input type="text" class="form-control" id="namaKK">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="alamat" class="form-label">109. Alamat</label>
+                                        <textarea class="form-control" id="alamat" name="alamat" rows="2" required></textarea>
                                     </div>
                                     <h4 class="card-title">II. KETERANGAN PERUMAHAN</h4>
                                     <div class="col-md-6">
@@ -84,7 +86,29 @@
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="luasLantai" class="form-label">202. Luas lantai bangunan tempat tinggal (m<sup>2</sup>)</label>
+                                        <label for="luasTanah" class="form-label">201.c. <b>Jika 201.b berkode 1,2 atau 3</b>, Berapa luas tanah yang tertulis di SHM? <b>(m<sup>2</sup>)</b>
+                                        </label>
+                                        <input type="number" step="0.01" class="form-control" id="luasTanah">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="pajak" class="form-label">202. Apakah bangunan tempat tinggal yang ditempati dikenakan Pajak Bumi dan Bangunan?
+                                        </label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="pajak" id="pajak1">
+                                            <label class="form-check-label" for="pajak1">
+                                                Ya, atas nama (tuliskan)
+                                            </label>
+                                            <input type="text" class="form-control" id="namaPajak">
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="pajak" id="pajak2" checked>
+                                            <label class="form-check-label" for="pajak2">
+                                                Tidak
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="luasLantai" class="form-label">202. Luas lantai bangunan tempat tinggal <b>(m<sup>2</sup>)</b></label>
                                         <input type="number" step="0.01" class="form-control" id="luasLantai">
                                     </div>
                                     <div class="col-md-6">
@@ -459,25 +483,6 @@
                                         <button type="submit" class="btn btn-primary">Tambah Data</button>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="tab-pane fade" id="excel-justified" role="tabpanel" aria-labelledby="excel-tab">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h5>Import Data Keluarga dari File Excel</h5>
-                                        </div>
-                                        <div class="card-block">
-
-                                            <?php echo form_open_multipart(""); ?>
-                                            <div class="form-group mb-2">
-                                                <input type="file" name="file_excel" id="file_excel" required>
-                                                <button type="submit" id="button_import" name="import" class="btn btn-primary mb-2 rounded"> <i class="bx bxs-file-import"></i> Import</button>
-                                                <button type="" id="button_template" name="template" class="btn btn-primary mb-2 rounded"> <i class="bx bxs-file"></i> Template</button>
-                                            </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div><!-- End Default Tabs -->
 

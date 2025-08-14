@@ -6,7 +6,7 @@
         <div class="d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
                 <img src="<?= base_url() ?>/assets/img/Lambang_Kota_Sungai_Penuh.png" alt="">
-                <span class="d-none d-lg-block">Koto Teluk</span>
+                <span class="d-none d-lg-block">Aur Duri</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
@@ -89,54 +89,6 @@
                     </li>
                 </ul>
             </li><!-- End Data Penduduk Nav -->
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#" aria-expanded="false">
-                    <i class="bi bi-bar-chart"></i><span>Infografis</span><i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="charts-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav" style="">
-                    <li>
-                        <a href="<?php echo base_url(); ?>infografis/infografis/view/0" class="">
-                            <i class="bi bi-circle"></i><span>Desa Koto Teluk</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url(); ?>infografis/infografis/view/1" class="">
-                            <i class="bi bi-circle"></i><span>RT 001 DUSUN LARIK DIUJUNG</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url(); ?>infografis/infografis/view/2" class="">
-                            <i class="bi bi-circle"></i><span>RT 002 DUSUN LARIK DIUJUNG</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url(); ?>infografis/infografis/view/3" class="">
-                            <i class="bi bi-circle"></i><span>RT 003 DUSUN LARIK DUJUNG/MELINTANG</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url(); ?>infografis/infografis/view/4" class="">
-                            <i class="bi bi-circle"></i><span>RT 004 DUSUN LARIK MELINTANG</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url(); ?>infografis/infografis/view/5" class="">
-                            <i class="bi bi-circle"></i><span>RT 005 DUSUN LARIK TENGAH</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url(); ?>infografis/infografis/view/6" class="">
-                            <i class="bi bi-circle"></i><span>RT 006 DUSUN LARIK DI AIR</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url(); ?>infografis/infografis/view/7" class="">
-                            <i class="bi bi-circle"></i><span>RT 007 DUSUN LARIK DI AIR/MELINTANG</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
 
             <li class="nav-heading">Pages</li>
 

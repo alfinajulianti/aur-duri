@@ -15,35 +15,31 @@
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">KOTO TELUK</h5>
+            <h5 class="card-title">GEOGRAFIS DESA AUR DURI</h5>
             <p>
-              Desa Koto Teluk merupakan salah satu desa di kecamatan hamparan rawang, dinamakan Desa Koto Teluk karena pada mulanya memang terdapat suatu teluk ditengah-tengah pemukiman warga koto teluk hampir mirip dengan telaga, dimana telaga atau teluk itu merupakan tempat masyarakat rawang memancing ikan, teluk itu mempunyai keanehan, ia merupakan pelepasan dari batang kanyaho batuah yang warna airnya agak kebiruan.
+              Desa Aur Duri merupakan salah satu desa dalam wilayah kecamatan Pondok Tinggi Kota Sungai Penuh yang luas wilayahnya menurut pengukuran adalah 79,75 Ha, mempunyai 5 dusun dan 10 RT. Desa Aur Duri memiliki letak yang sangat strategis karena berada dekat dengan pusat ibu kota Sungai Penuh. Adapun jarak desa Aur Duri dengan ibukota sekitar 0,5 Km yang dapat ditempuh selama ± 5 menit.
               <br> <br>
-              Karena desa ini semakin hari semakin bertambah dan berkembang penduduknya, mereka khawatir dengan hal tersebut, pada tahun 1938 teluk tersebut ditimbun oleh masyarakat rawang secara bergotong-royong, dengan menimbun teluk tersebut menggunakan material pasir, tanah dan batu, setelah ditimbun dengan pasir dan tanah didirikanlah sebuah bangunan masjid yang dinamakan Masjid Da’watul Falah,setelah menjadi desa Koto Teluk kemudian dibagi menjadi beberapa dusun, yaitu:
+              Keadaan morfologis wilayah Aur Duri sebagian besar yaitu 50 % merupakan tanah datar, dan 50 % tanah berbukit. Mengingat daerah Aur Duri terletak disekitar perbukitan maka suhu udara disiang hari berkisar 27ºC dan dimalam hari hingga 18ºC.
+              Dilihat dari bentang wilayahnya, desa Aur Duri berbatasan dengan:
 
             <ol type="a">
-              <li>Dusun Larik Dujun</li>
-              <li>Dusun Larik Tengah</li>
-              <li>Dusun Larik Melintang</li>
-              <li>Dusun Lark Diair</li>
+              <li>Sebelah Utara berbatasan dengan Desa Pondok Agung dan Desa Amar Sakti.</li>
+              <li>Sebelah Selatan berbatasan dengan Desa Sungai Jernih.</li>
+              <li>Sebelah Barat berbatasan dengan Desa Pelayang Raya.</li>
+              <li>Sebelah Timur berbatasan dengan Desa Lawang Agung dan Desa Karya Bakti.</li>
             </ol>
             </p>
 
-            <h4>Geografis</h4>
+            <h4></h4>
             <p>
-              Geografis
+              Dalam pemerintahan Desa Aur Duri terbagi dalam beberapa wilayah yang dinamakan Dusun. Aur duri mempunyai 5 dusun, yaitu :
 
             <ol type="a">
-              <li> Letak Daerah</li>
-              Desa Koto Teluk terletak ditengah-tengah kecamatan hamparan rawang, yang mempunyai jarak ibukota kecamatan 0,5 KM dan jarak dari kota Sungai Penuh 3 KM. Sedangkan desa ini mempunyai batas wilayah diantaranya :
-              <ul>
-                <li>Sebelah Timur berbatasan dengan Desa Dusun Diilir</li>
-                <li>Sebelah Barat berbatasan dengan Desa Cempaka</li>
-                <li>Sebelah Utara berbatasan dengan Desa Kampung Diilir</li>
-                <li>Sebelah Selatan berbatasan dengan Simpang Tiga</li>
-              </ul>
-              <li>Luas Daerah</li>
-              Desa Koto Teluk luas daerahnya sejak dahulu sampai sekarang tidak pernah bertambah dan tidak berkurang dengan luas wilayah 11 Hektare.
+              <li> Dusun Batu Lumut</li>
+              <li>Dusun Baru Jaya</li>
+              <li>Dusun Baru Sakti</li>
+              <li>Dusun Harapan Jaya</li>
+              <li>Dusun Malwan</li>
             </ol>
             </p>
           </div>
@@ -60,13 +56,13 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="<?= base_url() ?>/assets/img/peta_koto_teluk.jpg" class="d-block w-100" alt="...">
+              <img src="<?= base_url() ?>/assets/img/peta_aur_duri.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="<?= base_url() ?>/assets/img/daftar_kepala_desa.jpg" class="d-block w-100" alt="...">
+              <img src="<?= base_url() ?>/assets/img/peta_aur_duri.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="<?= base_url() ?>/assets/img/kantor_desa_koto_teluk.jpeg" class="d-block w-100" alt="...">
+              <img src="<?= base_url() ?>/assets/img/peta_aur_duri.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
 
